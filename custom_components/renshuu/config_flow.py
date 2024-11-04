@@ -25,7 +25,7 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                     },
                 )
             else:
-                errors["base"] = "auth"
+                errors["base"] = "Failed to authenticate"
 
         return self.async_show_form(
             step_id="user",
@@ -38,7 +38,6 @@ class ConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         )
 
     async def _test_credentials(self, hass: HomeAssistant, api_key: str) -> bool:
-        """Return true if credentials is valid."""
         try:
             session = aiohttp_client.async_get_clientsession(hass)
             headers = {"Authorization": f"Bearer {api_key}"}
