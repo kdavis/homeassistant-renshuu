@@ -3,5 +3,7 @@
     "name": "Renshuu",
     "version": "1.0.0",
     "documentation": "https://github.com/kdavis/homeassistant-renshuu",
-    "issue_tracker": "https://github.com/kdavis/homeassistant-renshuu/issues"
+    "issue_tracker": "https://github.com/kdavis/homeassistant-renshuu/issues",
+    "iot_class": "cloud_polling",
+    "config_flow": true
 }
