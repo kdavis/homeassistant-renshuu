@@ -1,0 +1,7 @@
+{
+    "domain": "renshuu",
+    "name": "Renshuu",
+    "version": "1.0.0",
+    "documentation": "https://github.com/kdavis/homeassistant-renshuu",
+    "issue_tracker": "https://github.com/kdavis/homeassistant-renshuu/issues"
+}
